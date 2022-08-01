@@ -9,70 +9,140 @@
       <link rel="stylesheet" href="css/style.css"/>
       <!-- render all elements normally -->
       <link rel="stylesheet" href="css/normalize.css"/>
+      <!-- swiper slider -->
+      <link
+      rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   </head>
   <body>
 
+    <!-- start nav -->
+
+    <nav id="nav">
+      <div class='zatech-icon-nav'>
+        <img class="icon" src="image/zatech-icon-nav.png"/>
+      </div>
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#ourserves">خدماتنا</a></li>
+        <li><a href="#ourwork">أعمالنا</a></li>
+        <li><a href="#">من نحن</a></li>
+        <li><a href="#">تواصل معنا</a></li>
+      </ul>
+    </nav>
+
+    <!-- end nav     -->
+    
     <!-- start home -->
-    <div class="home">
+    
+    <div class="home" id="home">
       <div class="container">
-        <nav>
-          <div class='zatech-icon-nav'>
-            <img class="icon" src="image/zatech-icon-nav.png"/>
-          </div>
-          <ul>
-            <li><a href="#">الرئيسية</a></li>
-            <li><a href="#">خدماتنا</a></li>
-            <li><a href="#">أعمالنا</a></li>
-            <li><a href="#">من نحن</a></li>
-            <li><a href="#">تواصل معنا</a></li>
-          </ul>
-        </nav>
-        <div class="banner">
+        <div class="banner right  move">
           <img class="banner" src="image/zatech-icon-nav.png"/>
           <p>
             نقدم لك حلول مبتكرة تجعل شركتك مستعدة لمواكبة التكنولوجيا والعالم الرقمي ،تضعك دائما في المقدمة
           </p>
         </div>
       </div>
-      <div class="backgrond-home">
-        <img src="image/zatech-home.webp" alt="" srcset="">
+      <div class="backgrond-home left move">
       </div>
     </div>
     <!-- end home -->
 
     <!-- start ourserves -->
     <div class="container">
-      <div class="ourserves">
-        <div class="intro">
+      <div class="ourserves" id="ourserves">
+        <header class="intro right move">
           <h1>خدماتنا</h1>
           <p>نقدم لك حلول مبتكرة تجعل شركتك مستعدة لمواكبة التكنولوجيا والعالم الرقمي ،تضعك دائما في المقدمة</p>
-        </div>
-        <div class="serves">
+        </header>
+        <div class="serves left move">
           <div class="serve">
-            <img src="" alt="">
+            <img src="image/مواقع.png" alt="">
             <h2>تصميم مواقع</h2>
           </div>
           <div class="serve">
-            <img src="" alt="">
+            <img src="image/التسويق.png" alt="">
             <h2>التسويق الالكتروني</h2>
           </div>
           <div class="serve">
-            <img src="" alt="">
+            <img src="image/تصميم.jpg" alt="">
             <h2>تصميم الهوية البصرية</h2>
           </div>
           <div class="serve">
-            <img src="" alt="">
+            <img src="image/الدعم.png" alt="">
             <h2>الدعم والصيانه</h2>
           </div>
           <div class="serve">
-            <img src="" alt="">
+            <img src="image/تطبيقات.png" alt="">
             <h2>تطوير تطبيقات الجوال</h2>
           </div>
         </div>
       </div>
     </div>
+    <div class="test" style="height: 15vh;"></div>
     <!-- end ourserves -->
 
+    <!-- start ourwork -->
+
+    <div class="ourwork" id="ourwork">
+      <div class="container">
+        <header class="right move">
+          <h1>أعمالنا</h1>
+          <p>تقدم شركة زاتك خدمات متعددة في مجال التصميم والبرمجة والتسويق تعرف على بعض من أعمالنا</p>
+        </header>
+        <!-- Slider main container -->
+        <div class="swiper left move">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <p>موقع يخص استشارات فى كافة المجالات يقوم طالب الاستشارة بالاشتراك مع احد المدربين او الاستشاريين الذى يوجد لديهم تقييم او دراسة سابقا يكون الاشتراك لاستشارة واحدة او اسبوعى او شهرى ويقوم بعرض استشاراتة على الاستشارى او المدرب يقوم بالرد علية فى سرية تانة وفى اسرع وقت ويقوم بطالب الاستشارة بتقييم الاستشارى ووضع ملاحظاتة علية</p>
+              <img src="image/slider.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <p>موقع يخص استشارات فى كافة المجالات يقوم طالب الاستشارة بالاشتراك مع احد المدربين او الاستشاريين الذى يوجد لديهم تقييم او دراسة سابقا يكون الاشتراك لاستشارة واحدة او اسبوعى او شهرى ويقوم بعرض استشاراتة على الاستشارى او المدرب يقوم بالرد علية فى سرية تانة وفى اسرع وقت ويقوم بطالب الاستشارة بتقييم الاستشارى ووضع ملاحظاتة علية</p>
+              <img src="image/slider.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <p>موقع يخص استشارات فى كافة المجالات يقوم طالب الاستشارة بالاشتراك مع احد المدربين او الاستشاريين الذى يوجد لديهم تقييم او دراسة سابقا يكون الاشتراك لاستشارة واحدة او اسبوعى او شهرى ويقوم بعرض استشاراتة على الاستشارى او المدرب يقوم بالرد علية فى سرية تانة وفى اسرع وقت ويقوم بطالب الاستشارة بتقييم الاستشارى ووضع ملاحظاتة علية</p>
+              <img src="image/slider.png" alt="">
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <!-- end ourwork -->
+
+    <!-- js file -->
     <script src='js/app.js'></script>
+    <!-- swiper slider -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        // autoplay:{
+        //   delay:3000,
+        //   disableOnInteraction:false
+        // },
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable:'true',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
+      });
+    </script>
   </body>
 </html>
