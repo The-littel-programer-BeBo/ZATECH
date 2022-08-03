@@ -17,6 +17,7 @@ window.addEventListener('scroll',()=>{
   // play animation
   animation()
 })
+window.addEventListener('load',animation())
 // animation sections function
 function animation(){
   document.querySelectorAll('.move').forEach(sec=> {
@@ -26,4 +27,3 @@ function animation(){
     }
   })
 }
-window.addEventListener('load',animation())
