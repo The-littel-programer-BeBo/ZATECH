@@ -5,41 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0">
     <title>ZATECH</title>
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="CSS/normalize.css"/>
       <!-- main templet css file -->
       <link rel="stylesheet" href="CSS/style.css"/>
-      <!-- render all elements normally -->
-      <link rel="stylesheet" href="CSS/normalize.css"/>
       <!-- swiper slider -->
       <link
       rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script>
+        window.addEventListener('load',()=>{
+          loading.style.cssText = 'opacity:0;'
+          setTimeout(()=>{
+            loading.style.cssText += 'display:none;'
+          },500)
+        })
+      </script>
   </head>
   <body>
-<!-- start nav -->
-    <!-- start nav -->
-    <!-- start nav -->
 
+    <!-- start nav -->
     <nav id="nav">
+      <i class="fa-solid fa-bars" id='bar'></i>
       <div class='zatech-icon-nav'>
-        <img class="icon" src="image/zatech-icon-nav.png"/>
+        <img class="icon" title="ZATECH ICON" src="image/zatech-icon-nav.png"/>
       </div>
-      <ul>
+      <ul id="ul" class="">
+        <i class="fa-solid fa-xmark" id="x"></i>
         <li><a href="#home">الرئيسية</a></li>
         <li><a href="#ourserves">خدماتنا</a></li>
         <li><a href="#ourwork">أعمالنا</a></li>
-        <li><a href="#">من نحن</a></li>
-        <li><a href="#">تواصل معنا</a></li>
-        <li><a href="#">فرع اسكندرية</a></li>
+        <li><a href="#who-we-are">من نحن</a></li>
+        <li><a href="#connect-us">تواصل معنا</a></li>
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <a href="#">فرع اسكندرية</a>
+        </li>
       </ul>
     </nav>
-
     <!-- end nav     -->
 
     <!-- start home -->
-    
-    <div class="home" id="home">
+    <section class="home" id="home">
       <div class="container">
         <div class="banner right  move">
-          <img class="banner" src="image/zatech-icon-nav.png"/>
+          <img class="banner" title="ZATECH ICON" src="image/zatech-icon-nav.png"/>
           <p>
             نقدم لك حلول مبتكرة تجعل شركتك مستعدة لمواكبة التكنولوجيا والعالم الرقمي ،تضعك دائما في المقدمة
           </p>
@@ -47,11 +58,11 @@
       </div>
       <div class="backgrond-home left move">
       </div>
-    </div>
+    </section>
     <!-- end home -->
 
     <!-- start ourserves -->
-    <div class="container">
+    <section class="container">
       <div class="ourserves" id="ourserves">
         <header class="intro right move">
           <h1>خدماتنا</h1>
@@ -59,33 +70,32 @@
         </header>
         <div class="serves left move">
           <div class="serve">
-            <img src="image/مواقع.png" alt="">
+            <i class="fa-solid fa-laptop-code"></i>
             <h2>تصميم مواقع</h2>
           </div>
           <div class="serve">
-            <img src="image/التسويق.png" alt="">
+            <i class="fa-solid fa-bullhorn"></i>
             <h2>التسويق الالكتروني</h2>
           </div>
           <div class="serve">
-            <img src="image/تصميم.jpg" alt="">
+            <i class="fa-solid fa-pen-ruler"></i>
             <h2>تصميم الهوية البصرية</h2>
           </div>
           <div class="serve">
-            <img src="image/الدعم.png" alt="">
+            <i class="fa-solid fa-gears"></i>
             <h2>الدعم والصيانه</h2>
           </div>
           <div class="serve">
-            <img src="image/تطبيقات.png" alt="">
+            <i class="fa-solid fa-mobile-screen"></i>
             <h2>تطوير تطبيقات الجوال</h2>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- end ourserves -->
 
     <!-- start ourwork -->
-
-    <div class="ourwork" id="ourwork">
+    <section class="ourwork" id="ourwork">
       <div class="container">
         <header class="right move">
           <h1>
@@ -100,15 +110,19 @@
             <!-- Slides -->
             <div class="swiper-slide">
               <p>موقع يخص استشارات فى كافة المجالات يقوم طالب الاستشارة بالاشتراك مع احد المدربين او الاستشاريين الذى يوجد لديهم تقييم او دراسة سابقا يكون الاشتراك لاستشارة واحدة او اسبوعى او شهرى ويقوم بعرض استشاراتة على الاستشارى او المدرب يقوم بالرد علية فى سرية تانة وفى اسرع وقت ويقوم بطالب الاستشارة بتقييم الاستشارى ووضع ملاحظاتة علية</p>
-              <img src="image/slider.png" alt="">
+              <img title="SLIDER IMAGE" src="image/slider.png" alt="">
             </div>
             <div class="swiper-slide">
               <p>موقع يخص استشارات فى كافة المجالات يقوم طالب الاستشارة بالاشتراك مع احد المدربين او الاستشاريين الذى يوجد لديهم تقييم او دراسة سابقا يكون الاشتراك لاستشارة واحدة او اسبوعى او شهرى ويقوم بعرض استشاراتة على الاستشارى او المدرب يقوم بالرد علية فى سرية تانة وفى اسرع وقت ويقوم بطالب الاستشارة بتقييم الاستشارى ووضع ملاحظاتة علية</p>
-              <img src="image/slider.png" alt="">
+              <img title="SLIDER IMAGE" src="image/slider.png" alt="">
             </div>
             <div class="swiper-slide">
               <p>موقع يخص استشارات فى كافة المجالات يقوم طالب الاستشارة بالاشتراك مع احد المدربين او الاستشاريين الذى يوجد لديهم تقييم او دراسة سابقا يكون الاشتراك لاستشارة واحدة او اسبوعى او شهرى ويقوم بعرض استشاراتة على الاستشارى او المدرب يقوم بالرد علية فى سرية تانة وفى اسرع وقت ويقوم بطالب الاستشارة بتقييم الاستشارى ووضع ملاحظاتة علية</p>
-              <img src="image/slider.png" alt="">
+              <img title="SLIDER IMAGE" src="image/slider.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <p>موقع يخص استشارات فى كافة المجالات يقوم طالب الاستشارة بالاشتراك مع احد المدربين او الاستشاريين الذى يوجد لديهم تقييم او دراسة سابقا يكون الاشتراك لاستشارة واحدة او اسبوعى او شهرى ويقوم بعرض استشاراتة على الاستشارى او المدرب يقوم بالرد علية فى سرية تانة وفى اسرع وقت ويقوم بطالب الاستشارة بتقييم الاستشارى ووضع ملاحظاتة علية</p>
+              <img title="SLIDER IMAGE" src="image/slider.png" alt="">
             </div>
           </div>
           <!-- If we need pagination -->
@@ -116,16 +130,15 @@
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
+        </div>
       </div>
-    </div>
-
+    </section>
     <!-- end ourwork -->
 
-
     <!--start about-->
-    <div class="container-2">
-      <div class="all">
-        <div class="text">
+    <section class="who-we-are" id="who-we-are">
+      <div class="container">
+        <div class="text right move">
           <h1>من نحن؟</h1>
           <p>
             هل تبحث عن شركة مبدعة تكرس كل جهودها من أجل نجاحك ونجاح
@@ -137,187 +150,115 @@
             العربي . ولدينا خبرات طويلة في مجال التسويق الإلكتروني وتصميم 
             المواقع وتصميم وتطوير التطبيقات للأندرويد والايفون طلب عرض سعر
           </p>
-          <div class="btn">
-            <a href="#">تواصل معنا</a>
+          <a href="#connect-us">تواصل معنا</a>
+        </div>
+        <div class="img-cont left move">
+          <div class="linear">
+            <span class="img"></span>
           </div>
         </div>
-        
-        <div class="img-group">
-          <img src="/image/group2.png">
-        </div>
       </div>
-      </div>
+    </section>
     <!--end about-->
 
-
-    <!--start logo-bar-->
-    <section class="logo-bar">
-        <div class="img-logo">
-          <img src="/image/logo.png">
-        </div>
-        <div class="text-1">
-            <p>شركة زاتك تساعدك على الوصل لهدفك واثباتك على الانترنت</p>
-        </div>
+    <!--start bar-->
+    <section class="bar">
+      <img title="ZATECH ICON" src="image/zatech-icon.png">
+      <p>شركة زاتك تساعدك على الوصل لهدفك واثباتك على الانترنت</p>
     </section>
-    <!--end logo-bar-->
-
+    <!--end bar-->
 
     <!--start about-2-->
-    <section class="about-2">
-        <div class="text-2">
+    <section class="why-zatech">
+        <div class="container">
             <h1>لماذا تختار شركة زاتك؟</h1>
-        </div>
-        <div class="container-3">
-            <div class="div-one">
-              <img src="/image/2438162.png">
-              <p>الجودة و الحماية</p>
-            </div>
-            <div class="div-one">
-              <img src="/image/b0dff96dac521a3c5568fc6ecea67884.png">
-              <p>التخطيط و التحليل</p>
-            </div>
-            <div class="div-one">
-              <img src="/image/png-clipart-computer-icons-symbol-technical-support-symbol-miscellaneous-service.png">
-              <p>الدعم الفني </p>
-            </div>
-            <div class="div-one">
-              <img src="/image/kisspng-computer-icons-innovation-clip-art-5adbc9dcec7a73.1948839815243535009686.png">
-              <p>الابداع و الابتكار</p>
+            <div class="content">
+              <div class="box move right">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>الجودة و الحماية</p>
+              </div>
+              <div class="box move left">
+                <i class="fa-solid fa-chart-line"></i>
+                <p>التخطيط و التحليل</p>
+              </div>
+              <span class="circle"></span>
+              <div class="box move right">
+                <i class="fa-solid fa-users-gear"></i>
+                <p>الدعم الفني </p>
+              </div>
+              <div class="box move left">
+                <i class="fa-regular fa-lightbulb"></i>
+                <p>الابداع و الابتكار</p>
+              </div>
             </div>
           </div>
         </div>
     </section>
     <!--end about-2-->
 
-
     <!--start Contact-->
-    <section class="contact">
-      <div class="list-input">
-        <div class="name">
-          <p>الاسم</p>
-          <input type="text">
-        </div>
-        <div class="gmail">
-          <p>البريد الالكتروني</p>
-          <input type="email">
-        </div>
-        <div class="phone">
-          <p>رقم الهاتف</p>
-          <input type="number">
-        </div>
-        <div class="message">
-          <p>الرسالة</p>
-          <input class="message-p" type="text">
-        </div>
-        <div class="btn-2">
-          <a href="#">ارسال</a>
-        </div>
-      </div>
+    <section class="contact" id="connect-us">
+      <div class="container">
+        <form>
+          <lable for="name">الاسم</lable>
+          <input type="text" id="name">
+          <lable for="email">البريد الالكتروني</lable>
+          <input type="email" id="email">
+          <lable for="phone">رقم الهاتف</lable>
+          <input type="number" id="phone">
+          <lable for="message">الرسالة</lable>
+          <input type="text" id="message">
+          <input type='submit' id="submit" value="ارسال">
+        </form>
 
-      <div class="info">
-        <div class="text-h1">
-          <h1>تواصل معنا</h1>
-          <p>يمكنك من خلال هنا , التواصل معنا واستقبال الاستفسارات الخاصه بك</p>
-        </div>
-        <div class="img-3">
-          <img src="/image/7777777777777777777777777.png">
-        </div>
-        <div class="info-2">
-          <div class="icon-5">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>شارع مسجد المتقين 37 <br>العحمي-البيطاش-الأسكندرية</p>
+        <div class="content">
+          <div class="text">
+            <h1>تواصل معنا</h1>
+            <p>
+              يمكنك من خلال هنا , التواصل معنا واستقبال الاستفسارات الخاصه بك
+            </p>
           </div>
-          <div class="icon-5">
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <p>شارع مسجد المتقين 37 <br>العحمي-البيطاش-الأسكندرية</p>
+          <div class="img">
+            <img title="ZATECH LOGO" src="image/zatech-with-background.png">
           </div>
-          <div class="icon-5 end">
-            <i class="fa-brands fa-whatsapp"></i>
-            <p>شارع مسجد المتقين 37 <br>العحمي-البيطاش-الأسكندرية</p>
+          <div class="info">
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>شارع مسجد المتقين 37 <br>العحمي-البيطاش-الأسكندرية</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <p class="phone">01002558963</p>
+            </div>
+            <div>
+              <i class="fa-brands fa-whatsapp"></i>
+              <p class="phone">01289743572</p>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+              <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            </div>
           </div>
-        </div>
-        <div class="icons">
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-          <a href="#"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
     </section>
     <!--end Contact-->
-    
 
-
-
-    <!--start services-->
-    <section class="services">
-      <div class="container-4">
-        <div class="photo">
-          <img src="/image/Computer-8.jpg">
-        </div> 
-              <div class="twe-div">
-                <div class="email">
-                  <p>أشترك في النشر البريدية ليصلك عروضنا</p>
-                  <input type="email">
-                </div>
-                <div class="logo">
-                  <img src="/image/logo.png">
-                </div>
-              </div>
+    <!-- stard loadding animation -->
+    <div id="loading">
+      <div class="cont">
+        <img src="image/load.png" alt="loadding">
       </div>
-    </section>
-    <!--end services-->
+    </div>
+    <!-- end loadding animation -->
     
-    <!-- start info-3 -->
-    <section class="info-3">
-      <div class="all-info-3">
-        <div class="logo">
-          <img src="/image/logo.png">
-        </div>
-        <div class="call">
-          <div class="icon-5">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>شارع مسجد المتقين 37 <br>العحمي-البيطاش-الأسكندرية</p>
-          </div>
-          <div class="icon-5">
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <p>01289743572</p>
-          </div>
-          <div class="icon-5 end">
-            <i class="fa-brands fa-whatsapp"></i>
-            <p>01003555658</p>
-          </div>
-        </div>
-
-          <div class="links">
-            <p><a href="#">شركه زاتك للبرمجيات</a></p>
-            <p><a href="#">الرئيسية</a></p>
-            <p><a href="#">خدماتنا</a></p>
-            <p><a href="#">أعمالنا</a></p>
-            <p><a href="#">من نحن</a></p>
-            <p><a href="#">تواصل معنا</a></p>
-          </div>
-
-          <div class="about">
-            <p>خدماتنا</p>
-            <p>تطوير تطبيقات الجوال</p>
-            <p>الدعم والصيانه</p>
-            <p>التصميم وبناء الهوية البصرية</p>
-            <p>التسويق الالكتروني</p>
-            <p>تصميم والبرمجة المواقع</p>
-          </div>
-      </div>
-    </section>
-    <!-- end info-3 -->
-
-    <!-- start rights -->
-    <section class="rights">
-      <i class="fa-solid fa-copyright"></i>
-      <p>شركة زاتك للبرمجيات ، جميع الحقوق محفوظة 2022</p>
-    </section>
-    <!-- end rights -->
-
-
+    <!--start footer-->
+    <!-- <footer>
+      <section class="background"></section>
+    </footer> -->
+    <!-- end footer -->
 
     <!-- js file -->
     <script src='JS/app.js'></script>
